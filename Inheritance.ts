@@ -28,8 +28,10 @@ const animal= new Animal("nithu");
 animal.Sound();
 
 // const  dog = new Dog("kavi");
-Dog.Barks("kavi");
 // dog.meow("nith");
+Dog.Barks("kavi");
+
+
 
 //Real time example
 class Booking{
