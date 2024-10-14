@@ -14,25 +14,22 @@ class Animal{
     }
     Sound(){
         console.log(`${this.name}makes the sound`);
-        
     }
 }
 class Dog extends Animal{
-    Barks(){
+    static Barks(name:string){ //while using static keyword we cant able to create instance for that
         console.log(`${this.name} makes the sound`);
     }
-    meow(name:string){
-        console.log(`${this.name}`);
-        
-    }
+    // meow(name:string){
+    //     console.log(`${this.name}`);
+    // }
 }
-
 const animal= new Animal("nithu");
 animal.Sound();
 
-const  dog = new Dog("kavi");
-dog.Barks();
-dog.meow("nith");
+// const  dog = new Dog("kavi");
+Dog.Barks("kavi");
+// dog.meow("nith");
 
 //Real time example
 class Booking{
